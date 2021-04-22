@@ -35,24 +35,24 @@ function draw() {
     background(rgb(169,169,169));
     
     edges=createEdgeSprites();
-    ball.bounceoff(edges);
+    ball.bounceOff(edges);
 //add condition to check if box touching surface and make it box
-if (block1.isTouching(ball)&& ball.bounceoff(block1)){
+if (block1.isTouching(ball)&& ball.bounceOff(block1)){
     ball.shapeColor="blue"
     music.play();
 }
 
-if (block2.isTouching(ball)&& ball.bounceoff(block2)){
+if (block2.isTouching(ball)&& ball.bounceOff(block2)){
     ball.shapeColor="red"
     music.play();
 }
 
-if (block3.isTouching(ball)&& ball.bounceoff(block3)){
+if (block3.isTouching(ball)&& ball.bounceOff(block3)){
     ball.shapeColor="orange"
     music.play();
 }
 
-if (block4.isTouching(ball)&& ball.bounceoff(block4)){
+if (block4.isTouching(ball)&& ball.bounceOff(block4)){
     ball.shapeColor="yellow"
     music.play();
 }
